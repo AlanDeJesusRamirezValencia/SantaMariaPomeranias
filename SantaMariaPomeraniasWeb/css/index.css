@@ -1,11 +1,11 @@
 body{
+	background: #66EEBB;
 	margin: 0;
 }
 header {
-	background: #3A386F;
+	background: #66BBCC;
 	width: 100%;
 	position: static;
-	background-color: green;
 	height: 70px;
 	display: flex;
 	flex-direction: column;
@@ -24,7 +24,6 @@ header {
 }
 
 .titulo{
-	height: 100%;
 	position: static;
 	float: left;
 	left: 40px;
@@ -35,7 +34,7 @@ h1{
 }
 
 * {
-	font-family: 'sans-serif';
+	font-family: "Segoe UI",Arial,sans-serif;
 	text-decoration: none;
 }
 
@@ -44,21 +43,22 @@ section{
 }
 
 .izquierda{
-	background: #339378;
+	background: #FFF;
 	position: static;
 	float: left;
 	width: 50%;
-	height: 600px;
+	height: 700px;
 	transition: transform .1s ease;
-	text-align: center;
+
 }
 
 .contenedor{
-	height: 45px;
-	background: #33CCFF;
-	margin: 20px;
-	text-align: center;
+	margin: auto;
+	width: 88%;
+	height: 25%;
+	background: #6688CC;
 	line-height: 100%;
+
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -67,14 +67,20 @@ section{
 }
 
 .derecha{
-	background: #CC0000;
+	background: #6655DD;
 	position: static;
 	float: right;
 	width: 50%;
-	height: 600px;
+	height: 700px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 .container2,.container1{
-	background: #665699;
+	background: #6622EE;
 	width: 40%;
 	margin: 5%;
 }
@@ -91,17 +97,53 @@ section{
 	width: 100%;
 }
 
-@media screen and (max-width: 700px){
-	.derecha, .izquierda{
-		width: 100%;
+footer{
+	background: #111;
+	clear: both;
+	width: 100%;
+	height: 120px;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px){
+
+	.izquierda{
+		flex-direction: column;
 	}
 	.container1, .container2{
-		width: 400px;
+		width: 40%;
 		margin: auto;
+		float: none;
+	}
+}
+
+@media screen and (max-width: 700px) and (min-width: 400px){
+
+	header{
+		flex-direction: column;
+		height: auto;
+	}
+
+	.titulo, .logo{
+		float: none;
+	}
+
+	.derecha, .izquierda{
+		width: 100%;
+		height: auto;
+	}
+
+	.container1, .container2{
+		width: 250px;
+		margin: auto;
+		float: none;
 	}
 
 	.contenedor{
-		width: 80%;
+		height: 100px;
+	}
+
+	.izquierda{
+		flex-direction: row;
 	}
 }
 
