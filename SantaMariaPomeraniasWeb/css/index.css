@@ -1,10 +1,8 @@
-body{
-	background: #66EEBB;
-	margin: 0;
-}
+body{background-repeat: no-repeat;background-size: cover;background-attachment: fixed;margin: 0;}
 header {
-	background: #66BBCC;
-	width: 100%;
+	/*background: #66BBCC;*/
+	width: 60%;
+	float: right;
 	position: static;
 	height: 70px;
 	display: flex;
@@ -12,111 +10,202 @@ header {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-}
-
-
-.logo{
-	position: static;
-	float: right;
-	height: 60px;
-	width: 60px;
-	overflow: hidden;
+	transition: all 1.2s ease;
 }
 
 .titulo{
 	position: static;
 	float: left;
 	left: 40px;
+	transition: all 1.2s ease;
 }
 
 h1{
 	font-size: 23px;
+	color: white;
+	transition: all 1.2s ease;
+}
+
+.usuario{
+	font-size: 40px;
+	line-height: 80px;
 }
 
 * {
-	font-family: "Segoe UI",Arial,sans-serif;
+	font-family:"Comfortaa";
 	text-decoration: none;
 }
 
-section{
-	clear:both;
-}
 
 .izquierda{
-	background: #FFF;
+	text-align:center;
+	background: rgba(256,223,0,0.5);
+	font-size: 20px;
+	font-weight: 500;
 	position: static;
 	float: left;
-	width: 50%;
-	height: 700px;
-	transition: transform .1s ease;
-
+	width: 35%;
+	height: 300px;
+	transition: transform 1s ease;
+	border-style: solid;
+	border-width: 0px, 0px,10px,0px;
+	border-color: #00004D; 
+	box-sizing: border-box;
 }
 
-.contenedor{
-	margin: auto;
-	width: 88%;
-	height: 25%;
-	background: #6688CC;
-	line-height: 100%;
-
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+/*Foto del pomerania*/
+.ultimo{
+	position: relative;
+	width: 35%;
+	margin-top: -500px;
+	margin-left:15%;
+	transition: all 1.2s ease;
 }
 
 .derecha{
-	background: #6655DD;
+	/*background: #002277;*/
 	position: static;
 	float: right;
-	width: 50%;
-	height: 700px;
-
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
-.container2,.container1{
-	background: #6622EE;
-	width: 40%;
-	margin: 5%;
+	width: 65%;
+	height: 570px;
 }
 
-.container1{
-	float: left;
-}
-
-.container2{
-	float: right;
-}
-
-.imagen{
+.contenedor-botones {
+	padding-top: 10px;
+	/*background: green;*/
 	width: 100%;
 }
 
+.boton, .botoncerrarsesion, .boton2, .boton3{
+	text-align: center;
+	margin-top: 5px;
+	height: auto;
+	font-size: 20px;
+	border: 2px solid;
+	transition: all 1s ease;
+}
+
+.boton{
+	color: #FFFFFF;
+	border-color: #FFFFFF;
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+.boton:hover, .boton2:hover, .boton3:hover{
+  background: #FFFFFF;
+  color: #000000;
+}
+
+
+.botoncerrarsesion{
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
+	color: #000000;
+	border-color: #000000;
+	margin-top: 15px;
+}
+.botoncerrarsesion:hover {
+  background: black;
+  color: white;
+}
+
+.logo{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: auto;
+	-webkit-box-shadow: 10px, 10px, 10px, #BBBBBB;
+}
+
+
+.contenedor-redes-sociales{
+	transition: all 1s ease;
+	height: 350px;
+	width: 60px;
+	margin-left:4%; 
+}
+.redsocial{
+	width: 100%;
+	margin-top:33px;
+	margin-left:33px;
+	height: auto;
+}
+
+/*Footer*/
+
 footer{
-	background: #111;
+	background: rgba(0,16,16,0.5);
 	clear: both;
 	width: 100%;
 	height: 120px;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 700px){
+.boton2{
+	color: #FFFFFF;
+	border-color: rgba(255,255,255,0);
+	width: 45%;
+	float: left;
+}
+.opciones-secundarias {
+	float: left;
+}
 
-	.izquierda{
-		flex-direction: column;
-	}
-	.container1, .container2{
-		width: 40%;
-		margin: auto;
-		float: none;
+.opciones-secundarias p {
+	color: #FFFFFF;
+}
+
+.boton3{
+	color: #FFFFFF;
+	border-color: rgba(255,255,255,0);
+	float: right;
+	width: 45%;
+}
+.botones{
+	width: 45%;
+	float: right;
+}
+.mini{
+	height: 20px;
+}
+
+
+@media screen and (max-width: 1150px) and (min-width: 950px){
+	.derecha{
+		height: 500px;
 	}
 }
 
-@media screen and (max-width: 700px) and (min-width: 400px){
+@media screen and (max-width: 950px) and (min-width: 600px){
+	.izquierda{
+		width: 100%;
+		height: 250px;
+		float: none;
+	}
+	header{
+		position: relative;
+		float: none;
+		width: 100%;
+		height: 0px;
+		margin-top: -40px;
+		margin-bottom: 40px;
+	}
+	h1{
+		color: black;
+	}
+	.derecha{
+		height:450px;
+	}
+	.ultimo{
+		width: 40%;
+		margin-top: -600px;
+		margin-left: 7%;
+	}
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 400px){
 
 	header{
 		flex-direction: column;
@@ -126,24 +215,17 @@ footer{
 	.titulo, .logo{
 		float: none;
 	}
+	.logo{
+		width: 150%
+	}
 
 	.derecha, .izquierda{
 		width: 100%;
 		height: auto;
 	}
 
-	.container1, .container2{
-		width: 250px;
-		margin: auto;
-		float: none;
-	}
-
-	.contenedor{
-		height: 100px;
-	}
-
-	.izquierda{
-		flex-direction: row;
+	.ultimo{
+		display: none;
 	}
 }
 
