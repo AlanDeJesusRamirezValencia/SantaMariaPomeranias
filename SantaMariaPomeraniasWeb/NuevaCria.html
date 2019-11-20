@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title></title>
+		<title>Agregar Cría</title>
 		<base href="">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<meta charset="utf-8">
@@ -21,7 +21,43 @@
 	</div>
 	<section>
 		<form>
-			
+			<div>
+				Nombre de la nueva cría:
+				<input type="text" name="nombre" size="20">
+			</div>
+			<div>
+				Fecha de nacimiento:
+				<input type="date" name="nacimiento">
+			</div>
+			<div>
+				Nombre de la madre:
+				<input type="search" name="madre">
+			</div>
+			<div>
+				Raza:
+				<input list="razas">
+				<datalist id="razas">
+					<option value="Pomerania"></option>
+					<option value="Poodle"></option>
+				</datalist>
+			</div>
+			<div>
+				Peso:
+				<input type="number" name="peso" max="1" min="0"> Kg.
+			</div>
+			<div>
+				Tamaño:
+				<input type="number" name="tamano" min="0" max="100"> Cm.
+			</div>
+			<div>
+				Numero de Parto de la Madre:
+				<input type="number" name="parto" min="1" max="30">
+			</div>
+			<div>
+				Sexo del cachorro:
+				<input type="radio" name="genero" value="macho" checked> Macho
+				<input type="radio" name="genero" value="hembra"> Hembra
+			</div>
 		</form>
 	</section>
 </body>
