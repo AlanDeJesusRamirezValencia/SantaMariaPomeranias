@@ -13,19 +13,26 @@ header {
 	transition: all 1.2s ease;
 }
 
+.menuprincipal{
+	width: 25%;
+	color: black;
+}
+
 .titulo{
+	color: black;
 	position: static;
-	width: 30%;
-	left: 40px;
+	width: 25%;
 	transition: all 1.2s ease;
 }
 
 .orden{
-	width: 30%;
+	width: 25%;
+	color: black;
 }
 
 .barraDeBusqueda{
-	width: 30%;
+	width: 25%;
+	color: black;
 }
 
 h1{
@@ -42,6 +49,7 @@ h1{
 * {
 	font-family:"Comfortaa";
 	text-decoration: none;
+	color: white;
 }
 
 
@@ -123,18 +131,7 @@ h1{
 }
 
 
-.botoncerrarsesion{
-	width: 40%;
-	margin-left: 30%;
-	margin-right: 30%;
-	color: #000000;
-	border-color: #000000;
-	margin-top: 15px;
-}
-.botoncerrarsesion:hover {
-  background: black;
-  color: white;
-}
+
 
 .contenedor-redes-sociales{
 	transition: all 1s ease;
@@ -148,14 +145,27 @@ h1{
 	margin-left:33px;
 	height: auto;
 }
-
 /*Footer*/
-
 footer{
 	background: rgba(0,16,16,0.5);
 	clear: both;
 	width: 100%;
 	height: 120px;
+}
+
+form{
+	background-color: rgba(0,16,16,0.5);
+	border-radius: 10px;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 .boton2{
@@ -164,28 +174,15 @@ footer{
 	width: 45%;
 	float: left;
 }
-.opciones-secundarias {
-	float: left;
+
+.entrada{
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-.opciones-secundarias p {
-	color: #FFFFFF;
+.insertado{
+	border-radius: 7px;
 }
-
-.boton3{
-	color: #FFFFFF;
-	border-color: rgba(255,255,255,0);
-	float: right;
-	width: 45%;
-}
-.botones{
-	width: 45%;
-	float: right;
-}
-.mini{
-	height: 20px;
-}
-
 
 @media screen and (max-width: 1150px) and (min-width: 950px){
 	.derecha{
@@ -222,24 +219,20 @@ footer{
 
 
 @media screen and (max-width: 600px) and (min-width: 400px){
-
 	header{
 		flex-direction: column;
 		height: auto;
 	}
-
 	.titulo, .logo{
 		float: none;
 	}
 	.logo{
 		width: 150%
 	}
-
 	.derecha, .izquierda{
 		width: 100%;
 		height: auto;
 	}
-
 	.ultimo{
 		display: none;
 	}

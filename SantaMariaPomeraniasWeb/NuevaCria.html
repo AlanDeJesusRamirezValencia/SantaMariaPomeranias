@@ -12,6 +12,7 @@
 	</head>
 <body background="css/fondo4.jpg">
 	<header>
+		<a href="index.html"><div class="menuprincipal">MenuPrincipal</div></a>
 		<div class="titulo">Lista de Crias</div>
 		<div class="orden">ordenar por: </div>
 		<div class="barraDeBusqueda">Buscar</div>
@@ -21,39 +22,39 @@
 	</div>
 	<section>
 		<form>
-			<div>
+			<div class="entrada">
 				Nombre de la nueva cría:
-				<input type="text" name="nombre" size="20">
+				<input type="text" name="nombre" size="20" class="insertado">
 			</div>
-			<div>
+			<div class="entrada">
 				Fecha de nacimiento:
-				<input type="date" name="nacimiento">
+				<input type="date" name="nacimiento" class="insertado">
 			</div>
-			<div>
+			<div class="entrada">
 				Nombre de la madre:
-				<input type="search" name="madre">
+				<input type="search" name="madre" class="insertado">
 			</div>
-			<div>
+			<div class="entrada">
 				Raza:
-				<input list="razas">
+				<input list="razas" class="insertado">
 				<datalist id="razas">
 					<option value="Pomerania"></option>
 					<option value="Poodle"></option>
 				</datalist>
 			</div>
-			<div>
+			<div class="entrada">
 				Peso:
-				<input type="number" name="peso" max="1" min="0"> Kg.
+				<input type="number" name="peso" max="1" min="0" class="insertado"> Kg.
 			</div>
-			<div>
+			<div class="entrada">
 				Tamaño:
-				<input type="number" name="tamano" min="0" max="100"> Cm.
+				<input type="number" name="tamano" min="0" max="100" class="insertado"> Cm.
 			</div>
-			<div>
+			<div class="entrada">
 				Numero de Parto de la Madre:
-				<input type="number" name="parto" min="1" max="30">
+				<input type="number" name="parto" min="1" max="30" class="insertado">
 			</div>
-			<div>
+			<div class="entrada2">
 				Sexo del cachorro:
 				<input type="radio" name="genero" value="macho" checked> Macho
 				<input type="radio" name="genero" value="hembra"> Hembra
